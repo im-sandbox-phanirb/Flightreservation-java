@@ -1,5 +1,6 @@
 package com.bharath.flightreservation.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,6 +23,7 @@ public class Flight {
     private String operatingAirlines;
     private String departureCity;
     private String arrivalCity;
+    @Column(name = "DATE_OF_DEPARTURE")
     private Date departureDate;
     private Timestamp estimatedDepartureTime;
 
